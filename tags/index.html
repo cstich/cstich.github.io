@@ -34,7 +34,7 @@ title: Tags
 {% if tag[1].size == i %}
 <div class="tag-container" id="{{ tag[0] | downcase | replace:' ','_' }}">
 <div class="container">
-<h2>{{ tag[0] }} <span class="badge">{{ i }}</span></h2>
+<h2>{{ tag[0] }} <span class="badge"># {{ i }}</span></h2>
 {% if tag[0] == 'time travel' %}<p>Posts that I wrote and published after the fact.</p>{% endif %}
 {% if tag[0] == 'elsewhere' %}<p>Posts that link to content originally posted elsewhere.</p>{% endif %}
 <div class="columns">
