@@ -31,7 +31,7 @@ exclude: [vendor,CNAME,README.md]
 pages_list:       
   About: '/about'
   Archive: '/archive'
-  Categories: '/catalog'
+  Catalog: '/catalog'
   Feed: '/atom.xml'
 
 mapbox-token: pk.eyJ1IjoiY3N0aWNoIiwiYSI6IlZCRVBhR2MifQ.NIhxFR5_gG6IhVaVyX_UxA
