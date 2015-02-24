@@ -1,0 +1,56 @@
+---
+layout: default 
+title: Catalog 
+---
+
+
+<h1>Catalog</h1>
+<p>Feel free to browse the genres or head over to the <a href="/tags/">tags</a>.
+</p>
+<div class="categories-columns">
+<ul class="fa-ul">
+{% assign categories_max = 0 %}
+{% for category in site.categories %}
+{% if category[1].size > categories_max %}
+{% assign categories_max = category[1].size %}
+{% endif %}
+{% endfor %}
+{% for i in (1..categories_max) reversed %}
+{% for category in site.categories %}
+{% if category[1].size == i %}
+<li><a href="#{{ category[0] | downcase | replace:' ','_' }}" title="{{ i }} posts"><i class="fa-li fa fa-check-square"></i> {{ category[0] }}</a></li>
+{% endif %}
+{% endfor %}
+{% endfor %}
+</ul>
+</div>
+
+<hr>
+{% assign categories_max = 0 %}
+{% for category in site.categories %}
+{% if category[1].size > categories_max %}
+{% assign categories_max = category[1].size %}
+{% endif %}
+{% endfor %}
+{% for i in (1..categories_max) reversed %}
+{% for category in site.categories %}
+{% if category[1].size == i %}
+<div id="{{ category[0] | downcase | replace:' ','_' }}">
+<div class="container">
+<h2>{{ category[0] }} <span class="badge"># {{ i }}</span></h2>
+<div>
+{% for post in category.last %}
+{% endfor %}
+</div>
+<div class="columns">
+<ul class="fa-ul">
+{% for post in category.last %}
+<li><a href="{{ post.url }}" title="posted on {{ post.date | date: "%B %d, %Y" }}"><i class="fa fa-angle-right fa-li"></i><span class="category-title">{{ post.title }}</span></a></li>
+{% endfor %}
+</ul>
+</div>
+</div>
+</div>
+{% endif %}
+{% endfor %}
+{% endfor %}

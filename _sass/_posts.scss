@@ -1,0 +1,59 @@
+
+.post {
+
+}
+
+.post-header {
+
+  position: relative;
+
+  .container { z-index: 1; }
+
+}
+
+.post-header-no-map {
+  .container { padding: 0px; }
+
+}
+
+.post-locations {
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+}
+
+.post-tags {
+  font-size: 0.8em;
+}
+
+.tag {
+  display: inline-block;
+}
+
+.post-date-updated {
+  display: block;
+  font-size: $font-xs;
+  text-align: inherit;
+}
+
+
+.post-prev-next {
+  display: inline-flex;
+  width: 100%;
+}
+
+// scss-lint:disable VendorPrefixes, PropertySortOrder
+.post-prev,
+.post-next {
+  margin-top: 1em;
+  transition: $link-transition;
+  width: 50%;
+
+  }
+
+.post-prev {
+  text-align: left;
+}
+
+.post-next {
+  text-allign: right;
+}

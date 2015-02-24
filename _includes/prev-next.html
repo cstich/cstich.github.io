@@ -1,0 +1,40 @@
+
+<div class="pagination">
+{% for category in site.categories %}
+    {% assign catg_name = category.first %}
+    {% if catg_name == page.category %}
+        {% assign catg_posts = category.last %}
+    {% endif %}
+{% endfor %}
+
+  {% for post in catg_posts %}
+        {% if post.url == page.url %}
+            {% assign post_index0 = forloop.index0 %}
+            {% assign post_index1 = forloop.index %}
+        {% endif %}
+    {% endfor %}
+    {% for post in catg_posts %}
+        {% if post_index0 == forloop.index %}
+            {% assign next_post = post.url %}
+            {% assign next_title = post.title %}
+
+        {% endif %}
+        {% if post_index1 == forloop.index0 %}
+            {% assign prev_post = post.url %}
+            {% assign prev_title = post.title %}
+        {% endif %}
+    {% endfor %}
+
+{% if prev_post %}
+    <a class="pagination-item newer" href="{{ prev_post}}">Previous Post</a>
+{% else %}
+    <span class="pagination-item older">The End</span>
+{% endif %}
+
+{% if next_post %}  
+     <a class="pagination-item older" href="{{ next_post }}">Next Post</a>
+{% else %}
+    <span class="pagination-item older">The Future</span>
+{% endif %}
+    
+</div>

@@ -1,0 +1,33 @@
+.columns {
+    -moz-column-gap: 3em;
+    -webkit-column-gap: 3em;
+    column-gap: 3em;
+    -moz-columns: 2 290px;
+    -webkit-columns: 2 290px;
+    columns: 2 290px;
+    font-size: 0.889em;
+}
+
+.tags-columns {
+    -moz-columns: 4 150px;
+    -webkit-columns: 4 150px;
+    columns: 4 150px;
+    font-size: 0.7em;
+    margin-bottom: 2em;
+}
+
+.categories-columns {
+    -moz-columns: 2 150px;
+    -webkit-columns: 2 150px;
+    columns: 2 150px;
+    font-size: 1.4em;
+    margin-bottom: 2em;
+}
+
+.archive-columns {
+    -moz-columns: 4 150px;
+    -webkit-columns: 4 150px;
+    columns: 4 150px;
+    font-size: 1.4em;
+    margin-bottom: 2em;
+}

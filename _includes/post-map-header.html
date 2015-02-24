@@ -1,0 +1,2 @@
+{% capture month %}{{page.date | date: "%m"}}{% endcapture %}
+{% if page.coordinates %}<div class="post-map-header"><div style="background-image:url(http://api.tiles.mapbox.com/v4/{{ site.mapid }}/{% for coordinate in page.coordinates limit:1 %}{{ coordinate }}{% endfor %},{% if page.zoom %}{{ page.zoom }}{% else %}15{% endif %}/1280x400.png?access_token={{ site.mapbox-token }})" class="post-location-image"></div><a class="map-attribution" href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox © OpenStreetMap</a></div>{% endif %}

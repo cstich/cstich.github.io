@@ -1,0 +1,57 @@
+---
+layout: default
+title: Archive 
+---
+
+<h1>Archive</h1>
+
+<div class="archive-columns">
+<ul class="fa-ul">
+{% for post in site.posts  %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+    {% if forloop.first %}
+      <li><a href="#{{ this_year | downcase | replace:' ','_' }}"><i class="fa-li fa fa-check-square"></i>{{ this_year }}</a></li>
+    {% endif %}
+    {% if forloop.last %}
+      </ul>
+    {% else %}
+    {% if this_year != next_year %}
+      <li><a href="#{{ next_year | downcase | replace:' ','_' }}"><i class="fa-li fa fa-check-square"></i>{{ next_year }}</a></li>
+    {% endif %}
+    {% endif %}
+{% endfor %}
+</div>
+
+<hr>
+
+
+{% for post in site.posts  %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+    {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
+
+    {% if forloop.first %}
+      <h2 id="{{ this_year }}">{{this_year}}</h2>
+      <h3>{{ this_month }}</h3>
+      <ul class="fa-ul">
+    {% endif %}
+    <li><a href="{{ post.url }}"><i class="fa fa-angle-right fa-li"></i> {{ post.title }}</a></li>
+    {% if forloop.last %}
+      </ul>
+    {% else %}
+    {% if this_year != next_year %}
+      </ul>
+      <h2 id="{{ next_year }}">{{next_year}}</h2>
+      <h3>{{ next_month }}</h3>
+      <ul class="fa-ul">
+    {% else %}
+    {% if this_month != next_month %}
+      </ul>
+      <h3>{{ next_month }}</h3>
+      <ul class="fa-ul">
+    {% endif %}
+    {% endif %}
+    {% endif %}
+{% endfor %}
