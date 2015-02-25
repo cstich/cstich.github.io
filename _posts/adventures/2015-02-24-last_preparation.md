@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Last preparations before Norway
+title: Last preparations
 category: adventures
 locations: Birmingham, UK
 tags:

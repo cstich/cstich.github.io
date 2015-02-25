@@ -8,7 +8,13 @@ layout: default
   <div class="container"><h1>{{ page.title }}</h1></div>
   </div>
 
-  <time datetime="{{ page.date | date_to_xmlschema }}" class="page-date">{{ page.date | date_to_string }}</time>
+
+  {% if page.category %}
+    <div class="post-meta"><a href="/card-catalog/#{{ page.category | downcase }}" class="post-type">{{ page.category }}</a> &#8212; {{ page.date | date: "%d %B, %Y" }}
+    {% if page.updated %}<a href="#updated_{{ page.updated | date: '%m%d%Y' }}" class="post-date-updated">Updated {{ page.updated | date: "%B %d, %Y" }}</a>
+    {% endif %}
+  </div>
+  {% endif %}
   {{ content }}
     <div class="post-footer">
     <div class="post-footer-meta">
