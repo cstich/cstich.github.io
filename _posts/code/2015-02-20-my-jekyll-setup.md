@@ -11,7 +11,7 @@ I decided that I needed a simple and easy way to maintain a personal website. I 
 
 I don't have to worry about hosting, buliding nor deploying my website. Everything is done on GitHub's end. Took me a while to set it up though, but now I dig it. I even have maps as every proper geographer should have.
 
-Also my code to run this site is a hodgepodge. If I ended up using some code, that I shouldn't have, just drop me an [e-mail](/about/).
+Also my code to run this site is a hodgepodge. Although all possible precautions have been undertaken to make sure that I am not using code I shouldn't use, something might have slipped through. If I ended up using some code, that I shouldn't have, just drop me an [e-mail](/about/).
 
 ## Setup
 
