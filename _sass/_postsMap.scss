@@ -1,3 +1,6 @@
+.post {
+}
+
 // scss-lint:disable VendorPrefixes, PropertySortOrder
 .post-header-has-map {
   margin-bottom: 1em;
@@ -19,7 +22,7 @@
 
     margin-top: -2em;
     min-height: 300px;
-    overflow: hidden;
+    overflow: visible;
     position: relative;
   }
 
@@ -42,12 +45,18 @@
   }
 }
 
+
+.post-map-container {
+  z-index: 1;
+}
+
 .post-map-header {
-  left: 0;
+ 
+  left: -100px;
   overflow: hidden;
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 920px;
 
   @include breakpoint(mobile) { display: none; }
 
@@ -64,7 +73,14 @@
     height: 300px;
     margin-left: auto;
     margin-right: auto;
-    width: 800px;
+    width: 920px;
   }
 
+}
+
+.map-attribution {
+ font-size: 50%;
+ z-index: 1;
+ position: relative;
+ float: right;
 }
