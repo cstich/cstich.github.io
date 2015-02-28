@@ -1,6 +1,6 @@
 ---
 title: Going North
-layout: posts
+layout: post
 locations: Oslo, Norway
 category: adventure
 tags: skiing, winter, Oslo
