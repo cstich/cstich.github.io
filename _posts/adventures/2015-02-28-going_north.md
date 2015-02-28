@@ -2,9 +2,14 @@
 title: Going North
 layout: post
 locations: Oslo, Norway
-category: adventure
-tags: skiing, winter, Oslo
-coordinates: 10.7500,59.9500
+category: adventures
+tags: 
+- skiing
+- winter
+- touring
+- Oslo
+coordinates: 
+- -10.7500,59.9500
 ---
 We had a couple of nice days in Oslo.
 ![house](https://www.dropbox.com/s/hk5cldf2u9mv4j5/IMG_20150226_200140~2.jpg?dl=0)
