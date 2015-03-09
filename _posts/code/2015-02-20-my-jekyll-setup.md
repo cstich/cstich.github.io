@@ -2,6 +2,7 @@
 layout: post
 title: How I built my Jekyll site
 category: code
+comments: True
 tags:
 - jekyll
 - blog

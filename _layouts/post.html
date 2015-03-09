@@ -10,7 +10,7 @@ layout: default
 
 
   {% if page.category %}
-    <div class="post-meta"><a href="/card-catalog/#{{ page.category | downcase }}" class="post-type">{{ page.category }}</a> &#8212; {{ page.date | date: "%d %B, %Y" }}
+    <div class="post-meta"><a href="/catalog/#{{ page.category | downcase }}" class="post-type">{{ page.category }}</a> &#8212; {{ page.date | date: "%d %B, %Y" }}
     {% if page.updated %}<a href="#updated_{{ page.updated | date: '%m%d%Y' }}" class="post-date-updated">Updated {{ page.updated | date: "%B %d, %Y" }}</a>
     {% endif %}
   </div>
