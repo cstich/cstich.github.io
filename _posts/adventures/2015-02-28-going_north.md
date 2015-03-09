@@ -8,12 +8,13 @@ tags:
 - winter
 - touring
 - Oslo
-coordinates: 
-- -10.7500,59.9500
+coordinates:
+- 10.752415,59.913610
+comments: true
 ---
 We had a couple of nice days in Oslo.
-![house](http://www.stich.xyz/pictures/oslo_pub.jpg)
-We enjoyed some authentic Norwegian food.![food](http://www.stich.xyz/pictures/oslo_pub_2.jpg)
+![house](http://www.stich.xyz/pictures/oslo_pub_2.jpg)
+We enjoyed some authentic Norwegian food.![food](http://www.stich.xyz/pictures/oslo_pub.jpg)
 We walked in a park full of marvelous statues
 ![park](http://www.stich.xyz/pictures/oslo_park_2.jpg)![statue](http://www.stich.xyz/pictures/oslo_park.jpg)
 
