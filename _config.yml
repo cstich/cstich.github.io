@@ -11,7 +11,8 @@ title:            Christoph Stich
 tagline:          'XYZ'
 description:      'PhD student at the intersection of geography and computer science'
 url:              http://cstich.github.io
-baseurl:          /
+baseurl:              http://cstich.github.io
+# baseurl:          /
 
 author:
   name:           'Christoph Stich'
@@ -33,6 +34,8 @@ pages_list:
   Archive: '/archive'
   Catalog: '/catalog'
   Feed: '/atom.xml'
+
+gems: [jekyll-paginate]
 
 mapbox-token: pk.eyJ1IjoiY3N0aWNoIiwiYSI6IlZCRVBhR2MifQ.NIhxFR5_gG6IhVaVyX_UxA
 mapid: cstich.41df8321
