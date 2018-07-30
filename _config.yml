@@ -11,7 +11,7 @@ title:            Christoph Stich
 tagline:          'XYZ'
 description:      'PhD student at the intersection of geography and computer science'
 url:              http://cstich.github.io
-baseurl:          /
+baseurl:          www.stich.xyz/
 
 author:
   name:           'Christoph Stich'
